@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+sets the baseline for tracking
+creates a repository folder to store the tracked changes
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+value: actually stores the change trail
+value: let´s you define which files to track
+difference: it only contains the changes, not the full code
