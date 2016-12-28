@@ -6,3 +6,40 @@ How is the staging area different from the working directory and the repository?
 value: actually stores the change trail
 value: let´s you define which files to track
 difference: it only contains the changes, not the full code
+
+working directory, staging area, repository
+git diff: working directory - staging area
+gif diff --staged: staging area - repository (commit_1)
+git diff commit_1 commit_2: diff commit number 1 with commit 2 in repository
+
+How can you use the staging area to make sure you have one commit per logical change?
+By structuring the development work to group logical items, then add what I think makes up the work for what I think one commit should be to the staging area. Then commit only this work. 
+
+git status
+git add
+git commit
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you try out an experimental change which you don´t know will work
+If you want to create a seperate version of the program for e.g. testing out language and layouts, different behavior
+
+How do the diagrams help you visualize the branch structure?
+Helps to visually see the dependencies and what changes are made where along the timeline of the branch(es)
+
+git branch
+git checkout
+git merge branch1 branch2
+git branch -d label (deletes a label after the merge)
+git show id (shows the changes of this commit compared to its parent)
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is a checked in version into the mainline, we combine two seperate workstreams into one line. 
+We represent it in the way we do because the commit ids have a logical chain to their respective master and this is still intact after the merge.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+auto merge - pro: saves time
+auto merge - con: conflict when two people modify the same code, could clutter code and create issues
+manual merge - pro: conflict is indicated and then the two developers need to exchange and work on the resolution, working code
+manual merge - con: requires additional time
+
+
