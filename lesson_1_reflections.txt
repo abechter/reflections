@@ -1,0 +1,43 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+identifies changes faster
+highlights differences
+displays the line numbers
+reduced the noise in what needs to be looked at
+sturctured output
+less scrolling
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+helps follow the creation and thought process how the program developed
+with proper documentation in the file it´s easier to insert or remove code blocks
+you can go back and fork into a different idea to explore alternate options
+in complex programs where more people write code at the same time it helps identify the thoguht process
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+pro manual: ability to create logical commit points
+pro manual: commit point with comments
+pro manual: executable code
+cons manual: if forgotten can end up in a large commit
+cons manual: requires discipline
+pro auto: regular saved versions
+cons auto: savepoint does not guarantee code is executable
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+git: optimized for writing code
+git: organizes data into a project
+docs: operates on a single file entity
+
+How can you use the commands git log and git diff to view the history of files?
+git log: shows the comments and change ids
+git log: shows cronological order
+git diff: allows to compare to versions based on change id
+
+How might using version control make you more confident to make changes that could break something?
+Helps me to identify bugs easier by allowing me to step through my changes
+Makes me confident to not loose work and run tests between different points in time
+can take risks of making larger changes
+can do exploratory work
+
+Now that you have your workspace set up, what do you want to try using Git for?
+My own little webserver project
+python code for my RD project
+
