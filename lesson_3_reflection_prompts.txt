@@ -6,3 +6,28 @@ Why might you want to always pull changes manually rather than having Git automa
 Let´s you have control on your progress and when you want to sync versions
 When multiple people work on a project auto sync would not make a lot of sense especially if you work in the same part of the code
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+branch: locally to experiement or start a new work
+clone: clone a repository either remote or locally
+fork: when there is a github project I want to start off but don´t want to make changes to the orginal project but work with a copy where my updates only affect my fork
+
+git fetch
+git pull: git fetch + git merge
+git fetch origin
+git log origin/master
+git diff origin/master master
+git push origin master
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+By this you can detect and resolve situations where updates local and remote had happened. E.g. while you are offline and a team member checked in changes while might or might not have worked on your local copy. When you get back online and you did not work on your local copy you can just run a git pull to get up to date. However, if you worked on your local copy then you don´t want your changes to get lost and git fetch will allow you to detect that now the two forks diverge.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Collaborate: e-mail, phone calls, daily standup meetings, stopping by a persons desk, video conference, webex
+easier: broader exchange about the issue
+harder: keeping track of all changes and discussions
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+separate branch: provides the ability to collaborate through the pull requests system. By this you have more eyes on your changes and the ability to increase the proability of only adding working code to the master branch.
+Making changes only on the master branch would have the benefit of less complexity. This benefit would play out only in a very small team.
+
+
